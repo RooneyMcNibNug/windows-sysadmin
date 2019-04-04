@@ -18,7 +18,7 @@ echo Listing applications currently installed - please wait:
 wmic /node:"%PC%" product get name
 echo.
 
-:MENU2
+:SELECT
 echo Enter Application to Uninstall - press B for to put in a different machine name, R to rescan applications for this machine, or Q to quit:
 echo.
 set SOFTWARE=R
