@@ -24,8 +24,8 @@ echo.
 set SOFTWARE=R
 Set /P SOFTWARE=
 if /I "%SOFTWARE%" EQU "Q" goto EOF
-if /I "%SOFTWARE%" EQU "B" goto APPLIST
-if /I "%SOFTWARE%" EQU "R" goto NAME
+if /I "%SOFTWARE%" EQU "R" goto APPLIST
+if /I "%SOFTWARE%" EQU "B" goto NAME
 cls
 echo Uninstalling "%SOFTWARE%" from %PC%:
 wmic /node:"%PC%" product where name="%SOFTWARE%" call uninstall /nointeractive
