@@ -1,0 +1,1 @@
+Get-ADGroupMember -Identity "Security Group" | foreach {Get-ADUser -Identity $_.distinguishedname -Properties displayname, samaccountname, lastlogondate | select displayname, samaccountname, lastlogondate} | Export-Csv C:\temp\User_Logon_Sec_Group.csv
