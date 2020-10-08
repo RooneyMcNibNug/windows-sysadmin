@@ -1,2 +1,2 @@
 # windows-sysadmin
-Windows server/endpoint tools, scripts, etc.
+Windows server/endpoint tools, one-liners, scripts, etc.
