@@ -11,8 +11,6 @@ REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate" /v Acc
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate" /v PingID /f
 REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate" /v SusClientId /f
 
-netsh winsock reset
-netsh winhttp reset proxy
 Get-BitsTransfer | Remove-BitsTransfer
 
 Start-Service -Name BITS
