@@ -1,4 +1,5 @@
 ### A quick script for updating existing WSL instances to WSL Version 2
+### NOTICE: This script will _not_ restart your machine, but you may need to do so manually before the final three steps (based on a couple of factors)
 
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # Enable the Windows Subsystem for Linux
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart # Enable Virtual Machine feature for WSL2
