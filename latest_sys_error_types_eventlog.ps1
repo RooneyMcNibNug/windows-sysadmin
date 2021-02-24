@@ -19,5 +19,6 @@ $precontent = "<H1>$Computername</H1><H2>Last $Latest error sources from $Log</H
 
 $data |Sort-Object -Property Count, Name -Descending |
     Select-Object Count, Name | 
-    ConvertTo-Html -Title $ReportTitle -PreContent $precontent  -PostContent $footer -CssUri $css |
+    ConvertTo-Html -Title $ReportTitle -PreContent $precontent -PostContent $footer -CssUri $css |
     Out-File -FilePath $Path
+    #Invoke-Item $Path
