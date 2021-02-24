@@ -1,6 +1,5 @@
 ## Running into a use case where someone needs to use IE (scripting not required) for some recent internal software? Hate this?
-## Here is a script to disable some dangerous legacy scripting (see links in comments) responsible for the lsat 5 zero-day vulns 
-## in IE at the time of writing this.
+## Here is a script to disable some dangerous legacy scripting (see links in comments) responsible for 5 recent zero-day vulns.
 
 ## MAKE SURE TO REVIEW THIS AND ENSURE THESE ARE NOT REQUIRED FOR TASKS AT HAND BEFORE DISABLING.
 ## This is set to be applied to your Internet Zone, not your Restricted Sites Zone (see links again for options to change this)
